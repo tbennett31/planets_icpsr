@@ -1,0 +1,102 @@
+Plain text
+
+*italics* and _italics_
+
+**bold** and __bold__
+
+superscript^2^
+
+subscript~2~
+
+~~strikethrough~~
+
+# Header1
+
+## Header2
+
+###Header3
+
+######Header6
+
+endash: --
+
+emdash: ---
+
+inline equation: $A = \pi*r^(2)$
+
+image: ![](https://www.rstudio.com/wp-content/uploads/2014/03/blue-125.png)
+
+horizontal rule (or slide break): ***
+
+---
+
+> block quote
+
+*unorder list
++ sub-item 1
++ sub-item 2
+
+1. ordered list
+2. item2
+
+you can write 'inline' code with back-tick
+
+```
+
+code block display
+with fixed length
+```
+
+Below are specific to r markdown:
+
+```{r}
+summary(1:10)
+```
+
+```{r plot, echo=TRUE}
+boxplot(1:10)
+```
+
+```{r histogram, echo=TRUE, fig.width=5, fig.height=4, fig.align='center'}
+hist(1:10)
+```
+
+Last night, I saw 'r 4 + 3' shooting stars.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+---
+title: "simple_rmarkdown"
+output: html_document
+---
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
+```{r}
+summary(cars)
+```
+
+You can also embed plots, for example:
+
+```{r, echo=FALSE}
+plot(cars)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
